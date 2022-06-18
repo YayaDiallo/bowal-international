@@ -21,6 +21,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'jsx-quotes': [0, 'prefer-double'],
     'comma-dangle': ['error', 'always-multiline'],
+    'no-unused-vars': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'prettier/prettier': [
       'error',
       {

@@ -1,8 +1,14 @@
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/index';
+import SignInPage from './pages/signIn';
+
 function App() {
   return (
-    <div>
-      <p>Bowal international</p>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/signIn" element={<SignInPage />} />
+    </Routes>
   );
 }
 
