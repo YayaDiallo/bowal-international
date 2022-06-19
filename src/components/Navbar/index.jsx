@@ -11,6 +11,7 @@ import {
   NavItem,
   NavLinks,
 } from './NavbarElements';
+import { navLinks } from '../../utils';
 
 function Navbar({ handleToggle }) {
   const [scrollNav, setScrollNav] = useState(false);
@@ -44,78 +45,21 @@ function Navbar({ handleToggle }) {
             <FaBars />
           </MobileIcon>
           <NavMenu>
-            <NavItem>
-              <NavLinks
-                to="about"
-                smooth
-                duration={500}
-                spy
-                exact="true"
-                offset={-80}
-              >
-                Qui sommes-nous ?
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="services"
-                smooth
-                duration={500}
-                spy
-                exact="true"
-                offset={-80}
-              >
-                Services
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="products"
-                smooth
-                duration={500}
-                spy
-                exact="true"
-                offset={-80}
-              >
-                Produits
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="providers"
-                smooth
-                duration={500}
-                spy
-                exact="true"
-                offset={-80}
-              >
-                Fournisseurs
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="commitments"
-                smooth
-                duration={500}
-                spy
-                exact="true"
-                offset={-80}
-              >
-                Engagements
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="signUp"
-                smooth
-                duration={500}
-                spy
-                exact="true"
-                offset={-80}
-              >
-                Contactez-nous
-              </NavLinks>
-            </NavItem>
+            {navLinks.map((navLink) => (
+              <NavItem>
+                <NavLinks
+                  key={navLink.id}
+                  to={navLink.target}
+                  smooth
+                  duration={500}
+                  spy
+                  exact="true"
+                  offset={-80}
+                >
+                  {navLink.label}
+                </NavLinks>
+              </NavItem>
+            ))}
           </NavMenu>
         </NavbarContainer>
       </Nav>

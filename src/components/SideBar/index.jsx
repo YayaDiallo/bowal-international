@@ -6,6 +6,7 @@ import {
   SideBarMenu,
   SideBarLink,
 } from './SideBarElements';
+import { navLinks } from '../../utils';
 
 function SideBar({ isOpen, handleToggle }) {
   return (
@@ -15,24 +16,15 @@ function SideBar({ isOpen, handleToggle }) {
       </Icon>
       <SideBarWrapper>
         <SideBarMenu>
-          <SideBarLink to="about" onClick={handleToggle}>
-            Qui sommes-nous ?
-          </SideBarLink>
-          <SideBarLink to="services" onClick={handleToggle}>
-            Services
-          </SideBarLink>
-          <SideBarLink to="products" onClick={handleToggle}>
-            Produits
-          </SideBarLink>
-          <SideBarLink to="providers" onClick={handleToggle}>
-            Fournisseurs
-          </SideBarLink>
-          <SideBarLink to="commitments" onClick={handleToggle}>
-            Engagements
-          </SideBarLink>
-          <SideBarLink to="signUp" onClick={handleToggle}>
-            Contactez-nous
-          </SideBarLink>
+          {navLinks.map((navLink) => (
+            <SideBarLink
+              key={navLink.id}
+              to={navLink.target}
+              onClick={handleToggle}
+            >
+              {navLink.label}
+            </SideBarLink>
+          ))}
         </SideBarMenu>
       </SideBarWrapper>
     </SideBarContainer>
