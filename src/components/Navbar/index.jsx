@@ -10,8 +10,6 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
 } from './NavbarElements';
 
 function Navbar({ handleToggle }) {
@@ -39,7 +37,9 @@ function Navbar({ handleToggle }) {
     <IconContext.Provider value={color}>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/" onClick={handleToggleHome}>dolla</NavLogo>
+          <NavLogo to="/" onClick={handleToggleHome}>
+            Bowal
+          </NavLogo>
           <MobileIcon onClick={handleToggle}>
             <FaBars />
           </MobileIcon>
@@ -53,19 +53,7 @@ function Navbar({ handleToggle }) {
                 exact="true"
                 offset={-80}
               >
-                About
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="discover"
-                smooth
-                duration={500}
-                spy
-                exact="true"
-                offset={-80}
-              >
-                Discover
+                Qui sommes-nous ?
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -82,6 +70,42 @@ function Navbar({ handleToggle }) {
             </NavItem>
             <NavItem>
               <NavLinks
+                to="products"
+                smooth
+                duration={500}
+                spy
+                exact="true"
+                offset={-80}
+              >
+                Produits
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="providers"
+                smooth
+                duration={500}
+                spy
+                exact="true"
+                offset={-80}
+              >
+                Fournisseurs
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="commitments"
+                smooth
+                duration={500}
+                spy
+                exact="true"
+                offset={-80}
+              >
+                Engagements
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
                 to="signUp"
                 smooth
                 duration={500}
@@ -89,13 +113,10 @@ function Navbar({ handleToggle }) {
                 exact="true"
                 offset={-80}
               >
-                Sign Up
+                Contactez-nous
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink to="/signIn">Sign In</NavBtnLink>
-          </NavBtn>
         </NavbarContainer>
       </Nav>
     </IconContext.Provider>

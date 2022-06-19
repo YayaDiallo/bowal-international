@@ -10,9 +10,9 @@ export const homeObjOne = {
   lightTextDesc: true,
   topLine: 'Premium Bank',
   headline: 'Unlimited Transactions with zero fees',
-  description:
-    'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.',
-  buttonLabel: 'Get started',
+  description: `Nous sommes une société spécialisée dans la négoce de matériel électrique à l'international, nous sommes actifs dans les industries telles que le pétrole, le gaz, l'exploitation minière, la chimie et la construction et bien d'autres. 
+    Nous distribuons aux professionnels à l’International à partir de notre plateforme logistique basée en région Parisienne. 
+    Nous accompagnons nos clients au plus près dans la réalisation de leurs projets et cela grâce à notre large gamme de fournisseurs à travers le monde.`,
   imgStart: false,
   img: svg1,
   alt: 'Car',
