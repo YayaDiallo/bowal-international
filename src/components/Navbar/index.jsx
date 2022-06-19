@@ -46,9 +46,8 @@ function Navbar({ handleToggle }) {
           </MobileIcon>
           <NavMenu>
             {navLinks.map((navLink) => (
-              <NavItem>
+              <NavItem key={navLink.id}>
                 <NavLinks
-                  key={navLink.id}
                   to={navLink.target}
                   smooth
                   duration={500}
