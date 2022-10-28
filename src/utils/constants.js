@@ -27,7 +27,7 @@ export const navLinks = [
   },
   {
     id: 6,
-    target: 'signUp',
+    target: 'contact',
     label: 'Contactez-nous',
   },
 ];

@@ -1,7 +1,6 @@
-// const svg1 = require('../../images/svg-1.svg');
-import svg1 from '../../images/svg-1.svg';
+import aroundWorld from '../../images/around_the_world.svg';
+import contactUs from '../../images/contact_us.svg';
 import svg2 from '../../images/svg-2.svg';
-import svg3 from '../../images/svg-3.svg';
 
 export const homeObjOne = {
   id: 'about',
@@ -14,7 +13,7 @@ export const homeObjOne = {
     Nous distribuons aux professionnels à l’International à partir de notre plateforme logistique basée en région Parisienne. 
     Nous accompagnons nos clients au plus près dans la réalisation de leurs projets et cela grâce à notre large gamme de fournisseurs à travers le monde.`,
   imgStart: false,
-  img: svg1,
+  img: aroundWorld,
   alt: 'Car',
   dark: true,
   primary: true,
@@ -22,7 +21,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-  id: 'discover',
+  id: 'services',
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -40,17 +39,53 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id: 'signUp',
+  id: 'contact',
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'Join our Team',
-  headline: 'Creating an account is extremely easy',
+  topLine: 'Contactez-nous',
+  headline: 'Pour en savoir plus sur nos services',
   description:
     "Get everything set up and ready in under 10 minutes. All you need to do is add your information and your information and you.'re ready to go",
   buttonLabel: 'Start Now',
   imgStart: false,
-  img: svg3,
+  img: contactUs,
+  alt: 'Paper',
+  dark: false,
+  primary: false,
+  darkText: true,
+};
+
+export const homeObjFour = {
+  id: 'providers',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Fournisseur',
+  headline: 'Pour en savoir plus sur nos fournisseur',
+  description:
+    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and your information and you.'re ready to go",
+  buttonLabel: 'Start Now',
+  imgStart: false,
+  img: contactUs,
+  alt: 'Paper',
+  dark: false,
+  primary: false,
+  darkText: true,
+};
+
+export const homeObjFive = {
+  id: 'commitments',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Engagement',
+  headline: 'Pour en savoir plus sur nos engagements',
+  description:
+    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and your information and you.'re ready to go",
+  buttonLabel: 'Start Now',
+  imgStart: false,
+  img: contactUs,
   alt: 'Paper',
   dark: false,
   primary: false,

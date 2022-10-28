@@ -82,6 +82,38 @@ export const SubTitle = styled.p`
   color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
 `;
 
+export const ContactInfo = styled.ul`
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+`;
+
+export const ContactChannel = styled.li`
+  max-width: 440px;
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  list-style: none;
+  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+
+  svg {
+    margin-right: 50px;
+  }
+`;
+
+export const LinkAction = styled.a`
+  text-decoration: none;
+  font-size: 20px;
+  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+
+  &:visited {
+    color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+  }
+`;
+
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;

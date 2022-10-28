@@ -10,7 +10,7 @@ export const Button = styled(Link)`
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
   border: none;
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@ export const Button = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ primary }) => (primary ? '#fff' : '#6C63FF')};
+    background: ${({ primary }) => (primary ? '#403b99' : '#6C63FF')};
   }
 `;
 

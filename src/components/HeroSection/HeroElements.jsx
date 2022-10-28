@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+import styled from "styled-components";
+import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -12,7 +12,7 @@ export const HeroContainer = styled.div`
   z-index: 1;
 
   :before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -40,6 +40,14 @@ export const HeroBg = styled.div`
 `;
 
 export const VideoBg = styled.video`
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #232a34;
+`;
+
+export const ImageBg = styled.img`
   width: 100%;
   height: 100%;
   -o-object-fit: cover;

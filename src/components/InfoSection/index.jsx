@@ -1,4 +1,7 @@
 import React from 'react';
+import { IoLogoWhatsapp } from 'react-icons/io';
+import { IoMail, IoLocation } from 'react-icons/io5';
+import { HiPhone } from 'react-icons/hi';
 
 import {
   InfoContainer,
@@ -12,6 +15,9 @@ import {
   SubTitle,
   ImgWrap,
   Img,
+  ContactInfo,
+  ContactChannel,
+  LinkAction,
 } from './InfoElements';
 
 function InfoSection({
@@ -34,7 +40,43 @@ function InfoSection({
             <TextWrapper>
               <TopLine>{topLine}</TopLine>
               <Heading lightText={lightText}>{headline}</Heading>
-              <SubTitle darkText={darkText}>{description}</SubTitle>
+              {id !== 'contact' && (
+                <SubTitle darkText={darkText}>{description}</SubTitle>
+              )}
+              {id === 'contact' && (
+                <ContactInfo darkText={true}>
+                  <ContactChannel darkText={true}>
+                    <HiPhone size={24} />{' '}
+                    <LinkAction darkText={true} href='tel:+33768672197'>
+                      + 33 7 68 67 21 97
+                    </LinkAction>
+                  </ContactChannel>
+                  <ContactChannel darkText={true}>
+                    <IoLogoWhatsapp size={24} />
+                    <LinkAction
+                      darkText={true}
+                      href='https://api.whatsapp.com/send?phone=33768672197'
+                    >
+                      + 33 7 68 67 21 97
+                    </LinkAction>
+                  </ContactChannel>
+                  <ContactChannel darkText={true}>
+                    <IoMail size={24} />
+                    <LinkAction
+                      darkText={true}
+                      href='mailto:contact@bowal-international.com'
+                    >
+                      contact@bowal-international.com
+                    </LinkAction>
+                  </ContactChannel>
+                  <ContactChannel darkText={true}>
+                    <IoLocation size={24} /> Paris, France
+                  </ContactChannel>
+                  <ContactChannel darkText={true}>
+                    <IoLocation size={24} /> Mermoz, Dakar
+                  </ContactChannel>
+                </ContactInfo>
+              )}
               {/* <BtnWrap>
                 <Button
                   to="/"

@@ -1,37 +1,33 @@
-import React, { useState } from 'react';
-import Video from '../../videos/video.mp4';
-import { Button } from '../ButtonElements';
+import React from 'react';
+// import Video from "../../videos/video.mp4";
+// import Image from '../../images/international.jpeg';
+import Image from '../../images/commerce-international.jpeg';
+// import { Button } from "../ButtonElements";
 import {
   HeroContainer,
   HeroBg,
-  VideoBg,
+  ImageBg,
   HeroContent,
   HeroH1,
-  HeroP,
-  HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
 } from './HeroElements';
 
 function HeroSection() {
-  const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
 
-  const onHover = () => {
-    setHover(!hover);
-  };
+  // const onHover = () => {
+  //   setHover(!hover);
+  // };
 
   return (
-    <HeroContainer id="home">
+    <HeroContainer id='home'>
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
+        <ImageBg src={Image} alt='international' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
-        <HeroP>
-          Sign up for a new account today and receive $250 in credit towards
-          your next payment.
-        </HeroP>
-        <HeroBtnWrapper>
+        <HeroH1>La centrale d&apos;achat des entreprises Africaines</HeroH1>
+        {/* <HeroP>La centrale d&apos;achat des entreprises Africaines</HeroP> */}
+        {/* <HeroBtnWrapper>
           <Button
             to="/"
             onMouseEnter={onHover}
@@ -46,7 +42,7 @@ function HeroSection() {
           >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
-        </HeroBtnWrapper>
+        </HeroBtnWrapper> */}
       </HeroContent>
     </HeroContainer>
   );
