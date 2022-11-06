@@ -4,38 +4,57 @@ import svg2 from '../../images/svg-2.svg';
 
 export const homeObjOne = {
   id: 'about',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: 'Premium Bank',
-  headline: 'Unlimited Transactions with zero fees',
-  description: `Nous sommes une société spécialisée dans la négoce de matériel électrique à l'international, nous sommes actifs dans les industries telles que le pétrole, le gaz, l'exploitation minière, la chimie et la construction et bien d'autres. 
-    Nous distribuons aux professionnels à l’International à partir de notre plateforme logistique basée en région Parisienne. 
-    Nous accompagnons nos clients au plus près dans la réalisation de leurs projets et cela grâce à notre large gamme de fournisseurs à travers le monde.`,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Qui sommes-nous ?',
+  headline: 'Une centrale d’achat qui répond à tous vos besoins',
+  description: `Nous sommes une société spécialisée dans la négoce de
+    matériels industriels et tertiaires à l'international, nous
+    sommes actifs dans les industries telles que le
+    pétrole, le gaz, l'exploitation minière, la chimie,
+    la construction et bien d'autres.
+
+    Nous distribuons aux professionnels à
+    l’International à partir de notre plateforme
+    logistique basée en région Parisienne.
+
+    Nous accompagnons nos clients au plus près
+    dans la réalisation de leurs projets grâce à
+    notre large gamme de fournisseurs en Europe
+    et à travers le monde.
+  `,
   imgStart: false,
   img: aroundWorld,
   alt: 'Car',
   dark: true,
-  primary: true,
-  darkText: false,
+  primary: false,
+  darkText: true,
 };
 
 export const homeObjTwo = {
   id: 'services',
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: 'Unlimited Access',
-  headline: 'Unlimited Transactions with zero fees',
-  description:
-    'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Services',
+  headline: 'Nous répondons à toutes vos attentes',
+  description: `Envoi de factures Proforma
+    Règlement par virement bancaire, paiement en
+    espèces/chèque possible à Dakar.
+    Expéditions selon incoterms : Pour le Sénégal, possibilité
+    de livraison sur votre chantier dans la région de Dakar.
+    Formalités douanières en liaison avec les transitaires
+    Emballages spécifiques
+    Contrôle chez les emballeurs/transitaires
+  `,
   buttonLabel: 'Learn More',
   imgStart: true,
   img: svg2,
   alt: 'Piggybank',
   dark: false,
-  primary: false,
-  darkText: true,
+  primary: true,
+  darkText: false,
 };
 
 export const homeObjThree = {
@@ -79,15 +98,20 @@ export const homeObjFive = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Engagement',
-  headline: 'Pour en savoir plus sur nos engagements',
-  description:
-    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and your information and you.'re ready to go",
+  topLine: 'Engagements',
+  headline: 'Une équipe professionnelle à votre écoute',
+  description: `Réactivité commerciale & conseils techniques
+    Suivi rigoureux de la commande jusqu'à la
+    livraison sur chantier
+    Qualité des produits & service après-vente à
+    l'écoute
+    Respect des délais
+  `,
   buttonLabel: 'Start Now',
   imgStart: false,
   img: contactUs,
   alt: 'Paper',
   dark: false,
-  primary: false,
-  darkText: true,
+  primary: true,
+  darkText: false,
 };

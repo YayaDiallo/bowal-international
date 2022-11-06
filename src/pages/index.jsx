@@ -8,7 +8,6 @@ import {
   homeObjOne,
   homeObjTwo,
   homeObjThree,
-  homeObjFour,
   homeObjFive,
 } from '../components/InfoSection/Data';
 import Products from '../components/Products';
@@ -29,7 +28,6 @@ function Home() {
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       <Products />
-      <InfoSection {...homeObjFour} />
       <InfoSection {...homeObjFive} />
       <InfoSection {...homeObjThree} />
       <Footer />

@@ -17,16 +17,11 @@ export const navLinks = [
   },
   {
     id: 4,
-    target: 'providers',
-    label: 'Fournisseurs',
-  },
-  {
-    id: 5,
     target: 'commitments',
     label: 'Engagements',
   },
   {
-    id: 6,
+    id: 5,
     target: 'contact',
     label: 'Contactez-nous',
   },
