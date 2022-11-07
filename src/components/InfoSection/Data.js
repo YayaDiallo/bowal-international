@@ -1,4 +1,4 @@
-import aroundWorld from '../../images/around_the_world.svg';
+import world from '../../images/world.svg';
 import contactUs from '../../images/contact_us.svg';
 import svg2 from '../../images/svg-2.svg';
 
@@ -25,11 +25,12 @@ export const homeObjOne = {
     et à travers le monde.
   `,
   imgStart: false,
-  img: aroundWorld,
+  img: world,
   alt: 'Car',
   dark: true,
   primary: false,
   darkText: true,
+  listWrapper: false,
 };
 
 export const homeObjTwo = {
@@ -39,15 +40,13 @@ export const homeObjTwo = {
   lightTextDesc: true,
   topLine: 'Services',
   headline: 'Nous répondons à toutes vos attentes',
-  description: `Envoi de factures Proforma
-    Règlement par virement bancaire, paiement en
-    espèces/chèque possible à Dakar.
-    Expéditions selon incoterms : Pour le Sénégal, possibilité
-    de livraison sur votre chantier dans la région de Dakar.
-    Formalités douanières en liaison avec les transitaires
-    Emballages spécifiques
-    Contrôle chez les emballeurs/transitaires
-  `,
+  descriptionLists: [
+    'Envoi de factures Proforma',
+    'Règlement par virement bancaire, paiement en espèces/chèque possible à Dakar.',
+    'Expéditions selon incoterms : Pour le Sénégal, possibilité de livraison sur votre chantier dans la région de Dakar.',
+    'Formalités douanières en liaison avec les transitaires Emballages spécifiques.',
+    'Contrôle chez les emballeurs/transitaires.',
+  ],
   buttonLabel: 'Learn More',
   imgStart: true,
   img: svg2,
@@ -55,6 +54,7 @@ export const homeObjTwo = {
   dark: false,
   primary: true,
   darkText: false,
+  listWrapper: true,
 };
 
 export const homeObjThree = {
@@ -64,8 +64,6 @@ export const homeObjThree = {
   lightTextDesc: false,
   topLine: 'Contactez-nous',
   headline: 'Pour en savoir plus sur nos services',
-  description:
-    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and your information and you.'re ready to go",
   buttonLabel: 'Start Now',
   imgStart: false,
   img: contactUs,
@@ -73,6 +71,7 @@ export const homeObjThree = {
   dark: false,
   primary: false,
   darkText: true,
+  listWrapper: false,
 };
 
 export const homeObjFour = {
@@ -100,13 +99,13 @@ export const homeObjFive = {
   lightTextDesc: true,
   topLine: 'Engagements',
   headline: 'Une équipe professionnelle à votre écoute',
-  description: `Réactivité commerciale & conseils techniques
-    Suivi rigoureux de la commande jusqu'à la
-    livraison sur chantier
-    Qualité des produits & service après-vente à
-    l'écoute
-    Respect des délais
-  `,
+  descriptionLists: [
+    'Réactivité commerciale & conseils techniques',
+    "Suivi rigoureux de la commande jusqu'à la livraison sur chantier",
+    'Expéditions selon incoterms : Pour le Sénégal, possibilité de livraison sur votre chantier dans la région de Dakar.',
+    "Qualité des produits & service après-vente à l'écoute.",
+    'Respect des délais',
+  ],
   buttonLabel: 'Start Now',
   imgStart: false,
   img: contactUs,
@@ -114,4 +113,5 @@ export const homeObjFive = {
   dark: false,
   primary: true,
   darkText: false,
+  listWrapper: true,
 };

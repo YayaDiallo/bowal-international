@@ -18,6 +18,8 @@ import {
   ContactInfo,
   ContactChannel,
   LinkAction,
+  ListWrapper,
+  ListChild,
 } from './InfoElements';
 
 function InfoSection({
@@ -31,6 +33,7 @@ function InfoSection({
   description,
   img,
   alt,
+  descriptionLists,
 }) {
   return (
     <InfoContainer lightBg={lightBg} id={id}>
@@ -40,7 +43,13 @@ function InfoSection({
             <TextWrapper>
               <TopLine>{topLine}</TopLine>
               <Heading lightText={lightText}>{headline}</Heading>
-              {id !== 'contact' && (
+              {descriptionLists ? (
+                <ListWrapper>
+                  {descriptionLists.map((item, index) => (
+                    <ListChild key={index}>{item}</ListChild>
+                  ))}
+                </ListWrapper>
+              ) : (
                 <SubTitle darkText={darkText}>{description}</SubTitle>
               )}
               {id === 'contact' && (

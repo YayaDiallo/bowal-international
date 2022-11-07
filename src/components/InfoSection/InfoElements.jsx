@@ -82,6 +82,15 @@ export const SubTitle = styled.p`
   color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
 `;
 
+export const ListWrapper = styled.ul`
+  list-style-type: none;
+`;
+
+export const ListChild = styled.li`
+  font-size: 18px;
+  margin-bottom: 15px;
+`;
+
 export const ContactInfo = styled.ul`
   max-width: 440px;
   margin-bottom: 35px;
