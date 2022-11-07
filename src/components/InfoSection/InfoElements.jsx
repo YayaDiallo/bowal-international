@@ -102,6 +102,13 @@ export const ContactChannel = styled.li`
   svg {
     margin-right: 50px;
   }
+
+  @media (max-width: 492px) {
+    font-size: 15px;
+    svg {
+      margin-right: 30px;
+    }
+  }
 `;
 
 export const LinkAction = styled.a`
@@ -111,6 +118,10 @@ export const LinkAction = styled.a`
 
   &:visited {
     color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+  }
+
+  @media (max-width: 492px) {
+    font-size: 15px;
   }
 `;
 
