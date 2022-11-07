@@ -104,7 +104,7 @@ export const ContactChannel = styled.li`
   }
 
   @media (max-width: 492px) {
-    font-size: 15px;
+    font-size: 14px;
     svg {
       margin-right: 30px;
     }
@@ -121,7 +121,7 @@ export const LinkAction = styled.a`
   }
 
   @media (max-width: 492px) {
-    font-size: 15px;
+    font-size: 14px;
   }
 `;
 
