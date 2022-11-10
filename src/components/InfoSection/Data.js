@@ -1,6 +1,7 @@
 import world from '../../images/world.svg';
 import contactUs from '../../images/contact_us.svg';
-import svg2 from '../../images/svg-2.svg';
+import deliveryAddress from '../../images/delivery_address.svg';
+import teamGoals from '../../images/team_goals.svg';
 
 export const homeObjOne = {
   id: 'about',
@@ -49,7 +50,7 @@ export const homeObjTwo = {
   ],
   buttonLabel: 'Learn More',
   imgStart: true,
-  img: svg2,
+  img: contactUs,
   alt: 'Piggybank',
   dark: false,
   primary: true,
@@ -66,7 +67,7 @@ export const homeObjThree = {
   headline: 'Pour en savoir plus sur nos services',
   buttonLabel: 'Start Now',
   imgStart: false,
-  img: contactUs,
+  img: deliveryAddress,
   alt: 'Paper',
   dark: false,
   primary: false,
@@ -108,7 +109,7 @@ export const homeObjFive = {
   ],
   buttonLabel: 'Start Now',
   imgStart: false,
-  img: contactUs,
+  img: teamGoals,
   alt: 'Paper',
   dark: false,
   primary: true,
