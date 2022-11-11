@@ -25,7 +25,7 @@ function HeroSection() {
         <ImageBg src={Image} alt='international' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>La centrale d&apos;achat des entreprises Africaines</HeroH1>
+        <HeroH1>Distribution et services à l'international</HeroH1>
         {/* <HeroP>La centrale d&apos;achat des entreprises Africaines</HeroP> */}
         {/* <HeroBtnWrapper>
           <Button
