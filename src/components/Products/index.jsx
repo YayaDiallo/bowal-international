@@ -21,21 +21,26 @@ function Products() {
           <ProductsIcon src={Icon1} />
           <ProductsH2>Appareilage industriel</ProductsH2>
           <ProductsP>
-            We help reduce your fess and increase your overall revenue.
+            Contrôle industriel, automatisme, réseaux et informatique
+            industrielle, instrumentation, atmosphère explosive.
           </ProductsP>
         </ProductsCard>
         <ProductsCard>
           <ProductsIcon src={Icon2} />
           <ProductsH2>Appareillage tertiaire</ProductsH2>
           <ProductsP>
-            You can access our platform online anywhere in the world.
+            Prises, branchement de comptage, appareillage modulaire, boites
+            d'encastrement et dérivations, appareillage terminal, divers
+            tertiaire.
           </ProductsP>
         </ProductsCard>
         <ProductsCard>
           <ProductsIcon src={Icon3} />
           <ProductsH2>Luminaire</ProductsH2>
           <ProductsP>
-            Unlock our special membership card that returns 5% cash back.
+            Eclairage intérieur, eclairage extérieur alimentations, sources,
+            eclairage industriel. <br />
+            <br />
           </ProductsP>
         </ProductsCard>
       </ProductsWrapper>
