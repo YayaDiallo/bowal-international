@@ -18,7 +18,7 @@ function Products() {
       <ProductsH1>Nos Produits</ProductsH1>
       <ProductsWrapper>
         <ProductsCard>
-          <ProductsIcon src={Icon1} />
+          <ProductsIcon src={Icon1} alt="icône d'usine" />
           <ProductsH2>Appareilage industriel</ProductsH2>
           <ProductsP>
             Contrôle industriel, automatisme, réseaux et informatique
@@ -26,7 +26,7 @@ function Products() {
           </ProductsP>
         </ProductsCard>
         <ProductsCard>
-          <ProductsIcon src={Icon2} />
+          <ProductsIcon src={Icon2} alt='icône de ville' />
           <ProductsH2>Appareillage tertiaire</ProductsH2>
           <ProductsP>
             Prises, branchement de comptage, appareillage modulaire, boites
@@ -35,7 +35,7 @@ function Products() {
           </ProductsP>
         </ProductsCard>
         <ProductsCard>
-          <ProductsIcon src={Icon3} />
+          <ProductsIcon src={Icon3} alt="icône d'ampoule" />
           <ProductsH2>Luminaire</ProductsH2>
           <ProductsP>
             Eclairage intérieur, eclairage extérieur alimentations, sources,
