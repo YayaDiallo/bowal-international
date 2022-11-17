@@ -10,11 +10,8 @@ export const homeObjOne = {
   lightTextDesc: false,
   topLine: 'Qui sommes-nous ?',
   headline: 'Une centrale d’achat qui répond à tous vos besoins',
-  description: `Nous sommes une société spécialisée dans la négoce de
-    matériels industriels et tertiaires à l'international, nous
-    sommes actifs dans les industries telles que le
-    pétrole, le gaz, l'exploitation minière, la chimie,
-    la construction et bien d'autres.
+  description: `Bowal international est une société spécialisée dans la négoce de matériels industriels et tertiaires à l'international, 
+    nous sommes actifs dans les industries telles que le pétrole, le gaz, l'exploitation minière, la chimie, la construction et bien d'autres.
 
     Nous distribuons aux professionnels à
     l’International à partir de notre plateforme
@@ -43,9 +40,10 @@ export const homeObjTwo = {
   headline: 'Nous répondons à toutes vos attentes',
   descriptionLists: [
     'Envoi de factures Proforma',
-    'Règlement par virement bancaire, paiement en espèces/chèque possible à Dakar.',
-    'Expéditions selon incoterms : Pour le Sénégal, possibilité de livraison sur votre chantier dans la région de Dakar.',
-    'Formalités douanières en liaison avec les transitaires Emballages spécifiques.',
+    'Règlement par virement bancaire, paiement en espèces/chèque possible au Sénégal (à Dakar uniquement) et en Guinée.',
+    'Expéditions selon incoterms : Pour le Sénégal et la Guinée, possibilité de livraison sur votre chantier.',
+    'Formalités douanières en liaison avec les transitaires : Certificats EUR1, d’origine et attestations diverses.',
+    'Emballages spécifiques.',
     'Contrôle chez les emballeurs/transitaires.',
   ],
   buttonLabel: 'Learn More',
@@ -103,7 +101,6 @@ export const homeObjFive = {
   descriptionLists: [
     'Réactivité commerciale & conseils techniques',
     "Suivi rigoureux de la commande jusqu'à la livraison sur chantier",
-    'Expéditions selon incoterms : Pour le Sénégal, possibilité de livraison sur votre chantier dans la région de Dakar.',
     "Qualité des produits & service après-vente à l'écoute.",
     'Respect des délais',
   ],
