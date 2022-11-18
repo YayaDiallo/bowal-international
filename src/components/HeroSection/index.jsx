@@ -1,7 +1,7 @@
 import React from 'react';
 // import Video from "../../videos/video.mp4";
-// import Image from '../../images/international.jpeg';
-import Image from '../../images/commerce-international.jpeg';
+// import Image from '../../images/world-international.jpeg';
+import Image from '../../images/world-international.webp';
 // import { Button } from "../ButtonElements";
 import {
   HeroContainer,
